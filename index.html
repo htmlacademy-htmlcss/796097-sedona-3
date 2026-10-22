@@ -174,28 +174,32 @@
           </svg>
         </a>
       </footer>
-      <div class="popup-wrapper">
+      <div class="popup-wrapper popup-wrapper-closed">
         <div class="popup">
           <div class="popup-content">
             <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
             <form class="popup-filter" action="https://echo.htmlacademy.ru" method="post">
               <div class="dates-wrapper">
                 <label class="popup-inputfield-label" for="date-in">Дата Заезда:</label>
-                <input class="date-field" type="text" name="date-in" name="date-in" placeholder="Укажите дату">
-                <button class="calendar-btn" type="button"></button>
+                <input class="date-field" type="text" name="date-in" name="date-in" placeholder="Укажите дату" required>
+                <button class="calendar-btn" type="button">
+                  <span class="visually-hidden">Открыть календарь</span>
+                </button>
                 <p class="date-comment date-comment--visible date-comment-alarm">Мы не может отправить вас в прошлое.
                 </p>
               </div>
               <div class="dates-wrapper">
                 <label class="popup-inputfield-label" for="date-out">Дата Выезда:</label>
-                <input class="date-field" type="text" name="date-out" id="date-out" placeholder="Укажите дату">
-                <button class="calendar-btn" type="button"></button>
+                <input class="date-field" type="text" name="date-out" id="date-out" placeholder="Укажите дату" required>
+                <button class="calendar-btn" type="button">
+                  <span class="visually-hidden">Открыть календарь</span>
+                </button>
                 <p class="date-comment date-comment--visible">На эти даты есть свободные номера. Пока есть.</p>
               </div>
               <div class="person-ages-wrapper">
                 <div class="person-ages">
                   <label class="popup-inputfield-label" for="adult-count">Взрослые:</label>
-                  <input class="age-field" type="number" name="adult-count" id="adult-count" value="0">
+                  <input class="age-field" type="number" name="adult-count" id="adult-count" value="0" required>
                   <button class="people-count-btn people-count-btn--minus" type="button"></button>
                   <button class="people-count-btn people-count-btn--plus" type="button"></button>
                 </div>
@@ -203,15 +207,21 @@
                   <label class="popup-inputfield-label" for="children-count">Дети:</label>
                   <button class="tooltip" type="button"
                     data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></button>
-                  <input class="age-field" type="number" name="children-count" id="children-count" value="0">
-                  <button class="people-count-btn people-count-btn--minus" type="button"></button>
-                  <button class="people-count-btn people-count-btn--plus" type="button"></button>
+                  <input class="age-field" type="number" name="children-count" id="children-count" value="0" required>
+                  <button class="people-count-btn people-count-btn--minus" type="button">
+                    <span class="visually-hidden">Добавить персону</span>
+                  </button>
+                  <button class="people-count-btn people-count-btn--plus" type="button">
+                    <span class="visually-hidden">Добавить персону</span>
+                  </button>
                 </div>
               </div>
               <button class="popup-search-btn blue-btn" type="submit">Найти</button>
             </form>
           </div>
-          <button class="close-popup-btn" type="button"></button>
+          <button class="close-popup-btn" type="button">
+            <span class="visually-hidden">Закрыть попап</span>
+          </button>
         </div>
       </div>
 

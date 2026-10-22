@@ -1647,3 +1647,7 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+.popup-wrapper-closed {
+  display: none;
+}
