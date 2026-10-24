@@ -39,7 +39,16 @@ button {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 html {
@@ -1246,30 +1255,21 @@ body {
 }
 
 .social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 47px;
   height: 40px;
 }
 
 .social-link {
-  display: block;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
 }
 
-.social-link-vk {
-  padding: 12px 0;
-}
-
-.social-link-tg {
-  padding: 12px 0;
-}
-
-.social-link-youtube {
-  padding: 11px 0;
-}
-
 .social-img {
+  display: block;
   fill: #83b3d3;
 }
 
@@ -1291,8 +1291,6 @@ body {
   font-weight: 400;
   color: #000000;
   text-decoration: none;
-  margin-right: 235px;
-  width: 331px;
 }
 
 .phone-number:hover {
@@ -1650,4 +1648,21 @@ body {
 
 .popup-wrapper-closed {
   display: none;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.footer-phonenumbers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  margin-right: 232px;
+  width: 333px;
 }
