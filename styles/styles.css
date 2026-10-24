@@ -314,7 +314,7 @@ body {
   flex-grow: 1;
 }
 
-.index-header {
+.hero {
   padding: 51px 371px 78px 371px;
   background-color: #197ad4;
   background-image: url(../images/vector.svg), url(../images/index-background.jpg);
@@ -325,7 +325,7 @@ body {
   box-sizing: border-box;
 }
 
-.index-header-img {
+.hero-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
