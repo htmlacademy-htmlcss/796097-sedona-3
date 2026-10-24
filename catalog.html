@@ -125,7 +125,7 @@
         <section class="searched-products" data-test="catalog">
           <div class="searched-control-wrapper">
             <h2 class="searched-products-title">Найдено гостиниц: 38</h2>
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select-control" aria-label="Сортировка" id="price-sort" name="price-sort">
               <option value="cheap">Сначала дешевые</option>
               <option value="cheap">Сначала дорогие</option>
             </select>
@@ -246,7 +246,7 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Ваш e-mail" autocomplete="email" required>
             <button class="subscribe-button blue-btn" type="submit">Подписаться</button>
           </form>
         </section>
