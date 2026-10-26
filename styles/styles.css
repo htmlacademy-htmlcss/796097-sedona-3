@@ -1467,6 +1467,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .popup-inputfield-label-short {
@@ -1622,9 +1623,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2px 12px;
+  flex-shrink: 0;
+
 }
 
 .tooltip::after {
+  align-self: center;
   width: 256px;
   content: attr(data-tooltip);
   position: absolute;
@@ -1677,6 +1681,7 @@ body {
 
 .children-label-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .people-count-btn {
