@@ -226,28 +226,35 @@
                   </button>
                 </div>
                 <div class="person-ages">
-                  <label class="popup-inputfield-label" for="children-count">Дети:</label>
-                  <button class="tooltip" type="button"
-                    data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></button>
-                  <button class="people-count-btn people-count-btn--minus" type="button">
-                    <span class="visually-hidden">Уменьшить количество человек.</span>
-                    <span class="icon-count-wrapper">
-                      <svg class="people-count-img" xmlns="http://www.w3.org/2000/svg" width="14" height="2"
-                        fill="none">
-                        <path d="M0 0v2h14V0z" />
-                      </svg>
-                    </span>
-                  </button>
-                  <input class="age-field" type="number" name="children-count" id="children-count" value="0" required>
-                  <button class="people-count-btn people-count-btn--plus" type="button">
-                    <span class="visually-hidden">Добавить количество человек.</span>
-                    <span class="icon-count-wrapper">
-                      <svg class="people-count-img" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                        fill="none">
-                        <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6z" />
-                      </svg>
-                    </span>
-                  </button>
+                  <div class="children-label-wrapper">
+                    <label class="popup-inputfield-label popup-inputfield-label-short"
+                      for="children-count">Дети:</label>
+                    <button class="tooltip" type="button"
+                      data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></button>
+                  </div>
+
+                  <div class="person-count-wrapper">
+                    <button class="people-count-btn people-count-btn--minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество человек.</span>
+                      <span class="icon-count-wrapper">
+                        <svg class="people-count-img" xmlns="http://www.w3.org/2000/svg" width="14" height="2"
+                          fill="none">
+                          <path d="M0 0v2h14V0z" />
+                        </svg>
+                      </span>
+                    </button>
+                    <input class="age-field" type="number" name="children-count" id="children-count" value="0" required>
+                    <button class="people-count-btn people-count-btn--plus" type="button">
+                      <span class="visually-hidden">Добавить количество человек.</span>
+                      <span class="icon-count-wrapper">
+                        <svg class="people-count-img" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                          fill="none">
+                          <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6z" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+
                 </div>
               </div>
               <button class="popup-search-btn blue-btn" type="submit">Найти</button>

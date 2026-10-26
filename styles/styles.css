@@ -1436,7 +1436,6 @@ body {
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   padding: 64px 70px;
-  padding-right: 50px;
   position: relative;
   margin: auto;
   max-height: 85vh;
@@ -1470,9 +1469,14 @@ body {
   font-weight: 700;
 }
 
+.popup-inputfield-label-short {
+  width: auto;
+  margin-right: 10px;
+}
+
 .date-field {
   position: relative;
-  width: 440px;
+  max-width: 440px;
   height: 48px;
   padding: 12px 20px;
   background-color: #f2f2f2;
@@ -1562,6 +1566,8 @@ body {
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .person-ages:not(:last-child) {
@@ -1606,13 +1612,12 @@ body {
 }
 
 .tooltip {
-  position: absolute;
+  position: relative;
   width: 26px;
   height: 26px;
   border: none;
   border-radius: 15px;
   background-color: #83b3d3;
-  left: 59px;
   background-image: url("../images/icons/i-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1637,6 +1642,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   text-align: left;
+  z-index: 10;
 }
 
 .tooltip::before {
@@ -1663,6 +1669,14 @@ body {
 .tooltip:focus-visible::before {
   opacity: 1;
   visibility: visible;
+}
+
+.person-count-wrapper {
+  display: flex;
+}
+
+.children-label-wrapper {
+  display: flex;
 }
 
 .people-count-btn {
