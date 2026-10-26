@@ -895,6 +895,24 @@ body {
   cursor: pointer;
 }
 
+
+
+.range-handler:hover {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.range-handler:focus-visible {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83b3d3;
+  outline-offset: 0;
+  border-radius: 3px;
+}
+
+.range-handler:active {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83b3d3;
+}
+
 .range-handler-from {
   top: -8px;
 }
@@ -937,7 +955,7 @@ body {
 }
 
 .control-input-checkbox:active {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
   outline: none;
 }
 
