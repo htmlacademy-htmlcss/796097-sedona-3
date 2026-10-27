@@ -1481,7 +1481,7 @@ body {
 
 .date-field {
   position: relative;
-  max-width: 440px;
+  width: 440px;
   height: 48px;
   padding: 12px 20px;
   background-color: #f2f2f2;
@@ -1525,6 +1525,7 @@ body {
   padding: 0;
   opacity: 0.3;
   cursor: pointer;
+  z-index: 9;
 }
 
 .calendar-btn:hover {
@@ -1830,4 +1831,8 @@ body {
   text-align: center;
   margin-right: 232px;
   width: 333px;
+}
+
+.date-wrapper {
+  position: relative;
 }

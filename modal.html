@@ -187,19 +187,24 @@
             <form class="popup-filter" action="https://echo.htmlacademy.ru" method="post">
               <div class="dates-wrapper">
                 <label class="popup-inputfield-label" for="date-in">Дата Заезда:</label>
-                <input class="date-field" type="text" name="date-in" id="date-in" placeholder="Укажите дату" required>
-                <button class="calendar-btn" type="button">
-                  <span class="visually-hidden">Открыть календарь</span>
-                </button>
+                <div class="date-wrapper">
+                  <button class="calendar-btn" type="button">
+                    <span class="visually-hidden">Открыть календарь</span>
+                  </button>
+                  <input class="date-field" type="text" name="date-in" id="date-in" placeholder="Укажите дату" required>
+                </div>
                 <p class="date-comment date-comment--visible date-comment-alarm">Мы не может отправить вас в прошлое.
                 </p>
               </div>
               <div class="dates-wrapper">
                 <label class="popup-inputfield-label" for="date-out">Дата Выезда:</label>
-                <input class="date-field" type="text" name="date-out" id="date-out" placeholder="Укажите дату" required>
-                <button class="calendar-btn" type="button">
-                  <span class="visually-hidden">Открыть календарь</span>
-                </button>
+                <div class="date-wrapper">
+                  <input class="date-field" type="text" name="date-out" id="date-out" placeholder="Укажите дату"
+                    required>
+                  <button class="calendar-btn" type="button">
+                    <span class="visually-hidden">Открыть календарь</span>
+                  </button>
+                </div>
                 <p class="date-comment date-comment--visible">На эти даты есть свободные номера. Пока есть.</p>
               </div>
               <div class="person-ages-wrapper">
